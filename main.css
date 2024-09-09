@@ -13,11 +13,15 @@ body{
     background-color: #3C3D37;
 }
 
-.hc, h1, h2, h3, h4, h5, h6{
+.bgcs_t{
+    border-color: #3C3D37;
+}
+
+.hc, h1, h2, h3, h4, h5, h6, .card-header{
     color: #697565;
 }
 
-.pc{
+.pc, .card-text{
     color: #ECDFCC;
 }
 
@@ -25,7 +29,7 @@ p, h6{
     margin: 0;
 }
 
-.nav-link{
+.nav-link, .bdrs{
     border-radius: 12px;
 }
 
@@ -68,8 +72,8 @@ p, h6{
   .bdr-animation::after, .bdr-animation::before{
     content: '';
     position: absolute;
-    height: 101%;
-    width: 101%;
+    height: 102%;
+    width: 102%;
     background-image: conic-gradient(from var(--angle), transparent 10%, green, #1E201E, green, #1E201E);
     top: 50%;
     left: 50%;
@@ -81,7 +85,7 @@ p, h6{
 
   .bdr-animation::before{
     filter: blur(1.5rem);
-    /* opacity: 0.5; */
+    opacity: 0.5;
   }
 
   @keyframes spin{
@@ -91,4 +95,8 @@ p, h6{
     to{
       --angle: 360deg;
     }
+  }
+
+  .text-indent{
+    text-indent: 50px;
   }
