@@ -1,102 +1,100 @@
 body{
-    font-family: "SUSE", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .bgc{
-    background-color: #1E201E;
+  background-color: #1E201E;
 }
 
-.bgcs, .nav-link{
-    background-color: #3C3D37;
+.bgcs{
+  background-color: #3C3D37;
 }
 
 .bgcs_t{
-    border-color: #3C3D37;
+  border-color: #3C3D37;
 }
 
 .hc, h1, h2, h3, h4, h5, h6, .card-header{
-    color: #697565;
+  color: #697565;
 }
 
 .pc, .card-text{
-    color: #ECDFCC;
+  color: #ECDFCC;
 }
 
 p, h6{
-    margin: 0;
+  margin: 0;
 }
 
-.nav-link, .bdrs{
-    border-radius: 12px;
-}
-
-.nav-link:hover{
-    background-color: #697565;
-}
-
-.nav-link:hover h6{
-    color: #3C3D37;
+.bdrs{
+  border-radius: 14px;
 }
 
 .name_effect{
-    text-shadow: 2px 2px 10px rgba(197, 192, 192, 0.5);
-    animation: blinkShadow 2s infinite;
-    -webkit-text-stroke: 2px #3C3D37;
+  text-shadow: 2px 2px 10px rgba(197, 192, 192, 0.5);
+  animation: blinkShadow 2s infinite;
+  -webkit-text-stroke: 2px #3C3D37;
 }
 
 @keyframes blinkShadow {
-    0%, 70%, 100% {
-        text-shadow: 2px 2px 10px rgba(196, 190, 190, 0.5);
-    }
-    10%, 50%, 80% {
-        text-shadow: 2px 2px 10px rgba(180, 168, 168, 0);
-    }
+  0%, 70%, 100% {
+      text-shadow: 2px 2px 10px rgba(196, 190, 190, 0.5);
+  }
+  10%, 50%, 80% {
+      text-shadow: 2px 2px 10px rgba(180, 168, 168, 0);
+  }
 }
 
 .bdr-animation{
-    margin: 0 auto;
-    padding: 3px;
-    width: fit-content;
-    position: relative;
-  }
-  
-  @property --angle{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-  }
-  
-  .bdr-animation::after, .bdr-animation::before{
-    content: '';
-    position: absolute;
-    height: 102%;
-    width: 102%;
-    background-image: conic-gradient(from var(--angle), transparent 10%, green, #1E201E, green, #1E201E);
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
-    border-radius: 10px;
-    animation: 3s spin linear infinite;
-  }
+  margin: 0 auto;
+  padding: 3px;
+  width: fit-content;
+  position: relative;
+}
 
-  .bdr-animation::before{
-    filter: blur(1.5rem);
-    opacity: 0.5;
-  }
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 
-  @keyframes spin{
-    from{
-      --angle: 0deg;
-    }
-    to{
-      --angle: 360deg;
-    }
-  }
+.bdr-animation::after, .bdr-animation::before{
+  content: '';
+  position: absolute;
+  height: 102%;
+  width: 102%;
+  background-image: conic-gradient(from var(--angle), transparent 10%, green, #1E201E, green, #1E201E);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
 
-  .text-indent{
-    text-indent: 50px;
+.bdr-animation::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
   }
+  to{
+    --angle: 360deg;
+  }
+}
+
+.text-indent{
+  text-indent: 50px;
+}
+
+.btp_o{
+  --bs-btn-border-color: #3C3D37;
+  --bs-btn-hover-bg: #3C3D37;
+  --bs-btn-active-bg: #3C3D37;
+}
