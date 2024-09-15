@@ -30,7 +30,9 @@ p, h6{
 }
 
 .bdrs{
-  border-radius: 14px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
 }
 
 .name_effect{
@@ -52,7 +54,8 @@ p, h6{
   margin: 0 auto;
   padding: 3px;
   width: fit-content;
-  position: relative;
+  top: -110px;
+  right: -110px;
 }
 
 @property --angle{
@@ -70,8 +73,8 @@ p, h6{
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  z-index: -1;
-  border-radius: 10px;
+  z-index: 1;
+  border-radius: 50%;
   animation: 3s spin linear infinite;
 }
 
