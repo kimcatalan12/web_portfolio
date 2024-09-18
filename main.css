@@ -5,6 +5,10 @@ body{
   font-style: normal;
 }
 
+/* :root{
+
+} */
+
 .bgc{
   background-color: #1E201E;
 }
@@ -17,11 +21,11 @@ body{
   border-color: #3C3D37;
 }
 
-.hc, h1, h2, h3, h4, h5, h6, .card-header{
+.hc, h1, h2, h3, h4, h5, h6, .card-header, .dropdown-toggle-split{
   color: #697565;
 }
 
-.pc, .card-text, .card-title{
+.pc, .card-text, .card-title, .dropdown-item{
   color: #ECDFCC;
 }
 
