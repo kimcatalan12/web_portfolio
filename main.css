@@ -5,9 +5,9 @@ body{
   font-style: normal;
 }
 
-/* :root{
-
-} */
+:root{
+  --bs-body-color:#ECDFCC;
+}
 
 .bgc{
   background-color: #1E201E;
@@ -21,7 +21,7 @@ body{
   border-color: #3C3D37;
 }
 
-.hc, h1, h2, h3, h4, h5, h6, .card-header, .dropdown-toggle-split{
+.hc, h1, h2, h3, h4, h5, h6, .card-header, .dropdown-toggle-split, .card-subtitle{
   color: #697565;
 }
 

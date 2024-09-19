@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
   </head>
   <body class="bgc container p-4">
@@ -17,12 +18,12 @@
           <h1 class="name_effect" style="font-family: system-ui;">KIM CATALAN</h1>
           <h4>WEB DEVELOPER</h4>
           <h5 class="fst-italic mb-3">First, solve the problem. Then, write the code. </h5>
-          <div class="row row-cols-auto">
-            <div class="col"><button type="button" class="active btn btp_o"><h6 class="fw-bold">ABOUT ME</h6></button></div>
-            <div class="col"><button type="button" class="btn btp_o"><h6 class="fw-bold">SKILL</h6></button></div>
+          <div class="row row-cols-auto" id="navbarheading">
+            <div class="col"><a type="button" href="#scrollspyHeading1" class="active btn btp_o"><h6 class="fw-bold">ABOUT ME</h6></a></div>
+            <div class="col"><a type="button" href="#scrollspyHeading2" class="btn btp_o"><h6 class="fw-bold">SKILL</h6></a></div>
             <div class="col">
               <div class="btn-group">
-                <button type="button" class="btn btp_o"><h6 class="fw-bold">PROJECT</h6></button>
+                <a type="button" href="#scrollspyHeading3" class="btn btp_o"><h6 class="fw-bold">PROJECT</h6></a>
                 <button type="button" class="btn btn-sm btp_o dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
@@ -37,7 +38,7 @@
             </div>
             <div class="col">
               <div class="btn-group">
-                <button type="button" class="btn btp_o"><h6 class="fw-bold">CAREERS</h6></button>
+                <a type="button" href="#scrollspyHeading4" class="btn btp_o"><h6 class="fw-bold">CAREERS</h6></a>
                 <button type="button" class="btn btn-sm btp_o dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
@@ -50,11 +51,12 @@
                 </ul>
               </div>
             </div>
-            <div class="col"><button type="button" class="btn btp_o"><h6 class="fw-bold">CONTACT</h6></button></div>
+            <div class="col"><button type="button" href="#scrollspyHeading5" class="btn btp_o"><h6 class="fw-bold">CONTACT</h6></button></div>
           </div>
         </article>
       </section>
-      <section>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0"></div>
+      <section id="scrollspyHeading1">
         <div class="justify-content-end row">
           <div class="col-6 align-self-end">
             <div class="bg-transparent bgcs_t border-5 card">
@@ -72,7 +74,7 @@
         </div>
       </section>
     </div>
-    <section class="justify-content-end row" style="margin-bottom: 25dvh;">
+    <section class="justify-content-end row" id="scrollspyHeading2" style="margin-bottom: 25dvh;">
       <div class="col-6 row">
         <div class="col-6">
           <div class="bg-transparent bgcs_t border-5 card h-100">
@@ -112,7 +114,7 @@
         </div>
       </div>
     </section>
-    <section class="justify-content-end row" style="margin-bottom: 25dvh;">
+    <section class="justify-content-end row" id="scrollspyHeading3" style="margin-bottom: 25dvh;">
       <div class="col-6">
         <div class="bg-transparent border-5 card bgcs_t">
           <div class="g-0 p-2 row">
@@ -122,7 +124,7 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="fw-bold">Card title</h5>
-                <h6 class="border-bottom fw-bold mb-3" style="width: fit-content;">Card title</h6>
+                <p class="border-bottom fs-6 fw-bold mb-3 pc" style="width: fit-content;">Card title</p>
                 <p class="card-text text-indent">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
             </div>
@@ -130,6 +132,52 @@
         </div>
       </div>
     </section>
+    <section class="justify-content-end row" id="scrollspyHeading4" style="margin-bottom: 25dvh;">
+      <div class="col-6 align-self-end">
+        <div class="bg-transparent bgcs_t border-5 card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="fw-bold">Card title</h5>
+            <h6 class="border-bottom fs-6 fw-bold mb-3 pc" style="width: fit-content;">Card subtitle</h6>
+            <p class="card-text text-indent">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="justify-content-end row" id="scrollspyHeading5" style="margin-bottom: 25dvh;">
+      <div class="col-6 align-self-end">
+        <div class="bg-transparent bgcs_t border-5 card">
+          <div class="card-body p-4">
+            <form action="" novalidate>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label fw-bold hc">NAME:</label>
+                <input type="text" class="bg-transparent form-control pc" id="formGroupExampleInput">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label fw-bold hc">EMAIL ADDRESS:</label>
+                <input type="text" class="bg-transparent form-control pc" id="formGroupExampleInput2">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label fw-bold hc">MESSAGE:</label>
+                <textarea  class="bg-transparent form-control pc" id="formGroupExampleInput2" rows="4"></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btp_o float-end" type="submit"><h6 class="fw-bold">Submit</h6></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <footer>
+      <div class="gap-1 hstack justify-content-center">
+        <i class="fa-regular fa-copyright"></i><small id="date"></small>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
   </body>
 </html>
