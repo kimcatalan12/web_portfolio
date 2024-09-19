@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
   </head>
-  <body class="bgc container p-4">
-    <div class="align-content-center align-items-center row" style="height: 100dvh;">
+  <body class="bgc container p-4" data-bs-spy="scroll" data-bs-target="#navbarheading" data-bs-offset="100" tabindex="0">
+    <div class="align-content-center align-items-center row" id="scrollspyHeading1" style="height: 100dvh;">
       <section class="d-flex position-fixed">
         <article class="text-start">
           <h1 class="name_effect" style="font-family: system-ui;">KIM CATALAN</h1>
           <h4>WEB DEVELOPER</h4>
           <h5 class="fst-italic mb-3">First, solve the problem. Then, write the code. </h5>
           <div class="row row-cols-auto" id="navbarheading">
-            <div class="col"><a type="button" href="#scrollspyHeading1" class="active btn btp_o"><h6 class="fw-bold">ABOUT ME</h6></a></div>
+            <div class="col"><a type="button" href="#scrollspyHeading1" class="btn btp_o"><h6 class="fw-bold">ABOUT ME</h6></a></div>
             <div class="col"><a type="button" href="#scrollspyHeading2" class="btn btp_o"><h6 class="fw-bold">SKILL</h6></a></div>
             <div class="col">
               <div class="btn-group">
@@ -27,13 +27,13 @@
                 <button type="button" class="btn btn-sm btp_o dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
-                <ul class="bgcs dropdown-menu">
+                <!-- <ul class="bgcs dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
+                </ul> -->
               </div>
             </div>
             <div class="col">
@@ -42,21 +42,21 @@
                 <button type="button" class="btn btn-sm btp_o dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
-                <ul class="bgcs dropdown-menu">
+                <!-- <ul class="bgcs dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
+                </ul> -->
               </div>
             </div>
-            <div class="col"><button type="button" href="#scrollspyHeading5" class="btn btp_o"><h6 class="fw-bold">CONTACT</h6></button></div>
+            <div class="col"><a type="button" href="#scrollspyHeading5" class="btn btp_o"><h6 class="fw-bold">CONTACT</h6></a></div>
           </div>
         </article>
       </section>
-  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0"></div>
-      <section id="scrollspyHeading1">
+
+      <section>
         <div class="justify-content-end row">
           <div class="col-6 align-self-end">
             <div class="bg-transparent bgcs_t border-5 card">
@@ -169,7 +169,6 @@
         </div>
       </div>
     </section>
-  </div>
     <footer>
       <div class="gap-1 hstack justify-content-center">
         <i class="fa-regular fa-copyright"></i><small id="date"></small>
