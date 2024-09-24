@@ -55,11 +55,8 @@ p, h6{
 }
 
 .bdr-animation{
-  margin: 0 auto;
   padding: 3px;
   width: fit-content;
-  top: -110px;
-  right: -110px;
 }
 
 @property --angle{
@@ -71,11 +68,11 @@ p, h6{
 .bdr-animation::after, .bdr-animation::before{
   content: '';
   position: absolute;
-  height: 102%;
-  width: 102%;
+  height: 110px;
+  width: 110px;
   background-image: conic-gradient(from var(--angle), transparent 10%, green, #1E201E, green, #1E201E);
-  top: 50%;
-  left: 50%;
+  top: 61px;
+  right: -41px;
   translate: -50% -50%;
   z-index: 1;
   border-radius: 50%;
@@ -104,4 +101,24 @@ p, h6{
   --bs-btn-border-color: #3C3D37;
   --bs-btn-hover-bg: #3C3D37;
   --bs-btn-active-bg: #3C3D37;
+}
+
+@media only screen and (max-width: 1400px) {
+  .section1 {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .section1 {
+    width: 27rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .section1 {
+    width: 21rem;
+  }
+}
+@media only screen and (max-width: 768px) {
 }
