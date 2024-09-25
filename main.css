@@ -25,7 +25,7 @@ body{
   color: #697565;
 }
 
-.pc, .card-text, .card-title, .dropdown-item{
+.pc, .card-text, .card-title, .dropdown-item, .badge{
   color: #ECDFCC;
 }
 
@@ -129,10 +129,36 @@ p, h6{
   }
   .scrollspyHeading1{
     height: unset!important;
+    margin-bottom: 0px!important;
   }
   .sh2_1{
     width: 100%;
     margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+  .scrollspyHeading1{
+    margin-top: 3rem !important;
+  }
+  .scrollspyHeading2{
+    margin-top: 3rem!important;
+    margin-bottom: unset!important;
+  }
+  .scrollspyHeading3{
+    margin-top: 3rem!important;
+    margin-bottom: unset!important;
+  }
+  .scrollspyHeading4{
+    margin-top: 3rem!important;
+    margin-bottom: unset!important;
+  }
+  .scrollspyHeading5{
+    margin-top: 3rem!important;
+    margin-bottom: unset!important;
+  }
+  footer{
+    margin-top: 3rem!important;
   }
 }
 
@@ -143,5 +169,17 @@ p, h6{
   }
   body{
     max-width: 720px;
+  }
+  .scrollspyHeading2{
+    margin-bottom: 3rem!important;
+  }
+  .scrollspyHeading3{
+    margin-bottom: 3rem!important;
+  }
+  .scrollspyHeading4{
+    margin-bottom: 3rem!important;
+  }
+  .scrollspyHeading5{
+    margin-bottom: 3rem!important;
   }
 }
