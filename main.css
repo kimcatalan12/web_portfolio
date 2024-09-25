@@ -103,6 +103,10 @@ p, h6{
   --bs-btn-active-bg: #3C3D37;
 }
 
+.section1 {
+  position: fixed;
+}
+
 @media only screen and (max-width: 1400px) {
   .section1 {
     width: 35rem;
@@ -116,9 +120,28 @@ p, h6{
 }
 
 @media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 850px) {
   .section1 {
-    width: 21rem;
+    width: 23rem;
+  }
+  .scrollspyHeading1{
+    height: unset!important;
+  }
+  .sh2_1{
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 767px) {
+  .section1 {
+    position: unset;
+    width: unset;
+  }
+  body{
+    max-width: 720px;
+  }
 }
