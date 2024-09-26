@@ -25,7 +25,7 @@ body{
   color: #697565;
 }
 
-.pc, .card-text, .card-title, .dropdown-item, .badge{
+.pc, .card-text, .card-title, .dropdown-item, .badge, .fa-github, .fa-linkedin{
   color: #ECDFCC;
 }
 
