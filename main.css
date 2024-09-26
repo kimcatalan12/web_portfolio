@@ -21,7 +21,7 @@ body{
   border-color: #3C3D37;
 }
 
-.hc, h1, h2, h3, h4, h5, h6, .card-header, .dropdown-toggle-split, .card-subtitle{
+.hc, h1, h2, h3, h4, h5, h6, .card-header, .dropdown-toggle-split, .card-subtitle, .fa-github, .fa-linkedin, .sub_text{
   color: #697565;
 }
 
@@ -101,6 +101,24 @@ p, h6{
   --bs-btn-border-color: #3C3D37;
   --bs-btn-hover-bg: #3C3D37;
   --bs-btn-active-bg: #3C3D37;
+}
+
+.btp_o_1{
+  --bs-btn-border-color: #697565;
+  --bs-btn-hover-bg: #697565;
+  --bs-btn-active-bg: #697565;
+}
+
+.modal-header{
+  --bs-modal-header-border-color: #697565;
+}
+
+.modal-footer{
+  --bs-modal-footer-border-color: #697565;
+}
+
+.focus-ring{
+  --bs-focus-ring-color:#697565;
 }
 
 .section1 {
