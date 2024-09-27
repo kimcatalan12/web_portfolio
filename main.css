@@ -25,6 +25,10 @@ body{
   color: #697565;
 }
 
+.bgcs_b{
+  background-color: #697565;
+}
+
 .pc, .card-text, .card-title, .dropdown-item, .badge, .fa-github, .fa-linkedin{
   color: #ECDFCC;
 }
@@ -145,17 +149,17 @@ p, h6{
   .section1 {
     width: 23rem;
   }
-  .scrollspyHeading1{
+  /* .scrollspyHeading1{
     height: unset!important;
     margin-bottom: 0px!important;
   }
   .sh2_1{
     width: 100%;
     margin-bottom: 1rem;
-  }
+  } */
 }
 
-@media only screen and (min-width: 768px) and (max-width: 850px) {
+/* @media only screen and (min-width: 768px) and (max-width: 850px) {
   .scrollspyHeading1{
     margin-top: 3rem !important;
   }
@@ -178,7 +182,7 @@ p, h6{
   footer{
     margin-top: 3rem!important;
   }
-}
+} */
 
 @media only screen and (max-width: 767px) {
   .section1 {
@@ -187,6 +191,9 @@ p, h6{
   }
   body{
     max-width: 720px;
+  }
+  .scrollspyHeading1{
+    height: unset!important;
   }
   .scrollspyHeading2{
     margin-bottom: 3rem!important;
