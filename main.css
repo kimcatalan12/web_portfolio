@@ -149,40 +149,7 @@ p, h6{
   .section1 {
     width: 23rem;
   }
-  /* .scrollspyHeading1{
-    height: unset!important;
-    margin-bottom: 0px!important;
-  }
-  .sh2_1{
-    width: 100%;
-    margin-bottom: 1rem;
-  } */
 }
-
-/* @media only screen and (min-width: 768px) and (max-width: 850px) {
-  .scrollspyHeading1{
-    margin-top: 3rem !important;
-  }
-  .scrollspyHeading2{
-    margin-top: 3rem!important;
-    margin-bottom: unset!important;
-  }
-  .scrollspyHeading3{
-    margin-top: 3rem!important;
-    margin-bottom: unset!important;
-  }
-  .scrollspyHeading4{
-    margin-top: 3rem!important;
-    margin-bottom: unset!important;
-  }
-  .scrollspyHeading5{
-    margin-top: 3rem!important;
-    margin-bottom: unset!important;
-  }
-  footer{
-    margin-top: 3rem!important;
-  }
-} */
 
 @media only screen and (max-width: 767px) {
   .section1 {
