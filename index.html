@@ -19,12 +19,12 @@
           <h4>WEB DEVELOPER</h4>
           <h5 class="fst-italic mb-3">First, solve the problem. Then, write the code. </h5>
           <div class="mb-3 gy-3 row row-cols-auto" id="navbarheading">
-            <div class="col"><a type="button" href="#scrollspyHeading1" class="border-2 btn btp_o"><h6 class="fw-bold">ABOUT ME</h6></a></div>
-            <div class="col"><a type="button" href="#scrollspyHeading2" class="border-2 btn btp_o"><h6 class="fw-bold">SKILL</h6></a></div>
+            <div class="col"><a type="button" href="#scrollspyHeading1" class="btn btp_o"><h6 class="fw-bold">ABOUT ME</h6></a></div>
+            <div class="col"><a type="button" href="#scrollspyHeading2" class="btn btp_o"><h6 class="fw-bold">SKILL</h6></a></div>
             <div class="col">
               <div class="btn-group">
-                <a type="button" href="#scrollspyHeading4" class="border-2 btn btp_o"><h6 class="fw-bold">CAREERS</h6></a>
-                <button type="button" class="btn btn-sm btp_o dropdown-toggle dropdown-toggle-split border-2" data-bs-toggle="dropdown" aria-expanded="false">
+                <a type="button" href="#scrollspyHeading4" class="btn btp_o"><h6 class="fw-bold">CAREERS</h6></a>
+                <button type="button" class="btn btn-sm btp_o dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <!-- <ul class="bgcs dropdown-menu">
@@ -38,8 +38,8 @@
             </div>
             <div class="col">
               <div class="btn-group">
-                <a type="button" href="#scrollspyHeading3" class="border-2 btn btp_o"><h6 class="fw-bold">PROJECT</h6></a>
-                <button type="button" class="btn btn-sm btp_o dropdown-toggle dropdown-toggle-split border-2" data-bs-toggle="dropdown" aria-expanded="false">
+                <a type="button" href="#scrollspyHeading3" class="btn btp_o"><h6 class="fw-bold">PROJECT</h6></a>
+                <button type="button" class="btn btn-sm btp_o dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <!-- <ul class="bgcs dropdown-menu">
@@ -51,14 +51,16 @@
                 </ul> -->
               </div>
             </div>
-            <div class="col"><a type="button" href="#scrollspyHeading5" class="border-2 btn btp_o"><h6 class="fw-bold">CONTACT</h6></a></div>
+            
+            <div class="col"><a type="button" href="#scrollspyHeading5" class="btn btp_o"><h6 class="fw-bold">CONTACT</h6></a></div>
           </div>
           <div class="gap-3 hstack">
-            <a href="https://github.com/kimcatalan12" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
-            <a href="https://linkedin.com/in/kim-catalan" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a href="https://github.com/kimcatalan12" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a href="http://linkedin.com/in/kim-catalan" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
           </div>
         </article>
       </section>
+
       <section>
         <div class="justify-content-end row">
           <div class="align-self-end col-12 col-md-6">
@@ -124,33 +126,68 @@
       <div class="align-self-end col-12 col-md-6">
         <span class="btn btp_o title_badge d-md-none">CAREER</span>
         <div class="bg-transparent bgcs_t border-5 card">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="img/manufacturer_website.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="fw-bold">Card title</h5>
-            <h6 class="border-bottom fs-6 fw-bold mb-3 pc" style="width: fit-content;">Card subtitle</h6>
-            <p class="card-text text-indent">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="fw-bold">Manufacturer Website</h5>
+            <h6 class="border-bottom fs-6 fw-bold mb-3 pc" style="width: fit-content;">MCJIM Company</h6>
+            <p class="card-text text-indent">I created a website that showcases leather products, services, careers and extensive product content. It is integrated with a Content Management System and is part of an ERP system.</p>
           </div>
         </div>
       </div>
     </section>
     <section class="justify-content-end row scrollspyHeading3" id="scrollspyHeading3" style="margin-bottom: 25dvh;">
-      <div class="col-12 col-sm-6">
+      <div class="col-12 col-md-6">
         <span class="btn btp_o title_badge d-md-none">PROJECT</span>
-        <div class="bg-transparent border-5 card bgcs_t">
-          <div class="g-0 p-2 row">
-            <div class="align-self-center col-md-4">
-              <img src="img/webportfolio_design.png" class="img-fluid rounded-start" alt="...">
+        <div class="gap-5 row">
+          <div class="col-12">
+            <div class="bg-gradient bgcs bgcs_t card">
+              <div class="g-0 p-2 row">
+                <div class="align-content-center bg-white col-md-4 rounded-2" style="transform: rotate(0);">
+                  <button type="button" class="border-0 btn p-0 stretched-link" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <img src="img/web_portfolio_design.png" class="img-fluid rounded-start" alt="Click to Open Modal">
+                  </button>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="fw-bold">Web Portfolio</h5>
+                    <p class="border-bottom fs-6 fw-bold mb-3 pc" style="width: fit-content;">Version 1</p>
+                    <p class="card-text text-indent">This website is designed with a simple layout to showcase my About Me, career, and projects.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="fw-bold">Web Portfolio</h5>
-                <p class="border-bottom fs-6 fw-bold mb-3 pc" style="width: fit-content;">Version 1</p>
-                <p class="card-text text-indent">This website is designed with a simple layout to showcase my About Me, career, and projects.</p>
+          </div>
+          <div class="col-12">
+            <div class="bg-gradient bgcs bgcs_t card">
+              <div class="g-0 p-2 row">
+                <div class="align-content-center bg-white col-md-4 rounded-2" style="transform: rotate(0);">
+                  <button type="button" class="border-0 btn p-0 stretched-link" data-bs-toggle="modal" data-bs-target="#test">
+                    <img src="img/game_development.png" class="img-fluid rounded-start" alt="Click to Open Modal">
+                  </button>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="fw-bold">THESIS: ADVENTURE OF KIM</h5>
+                    <p class="border-bottom fs-6 fw-bold mb-3 pc" style="width: fit-content;">Educational Game Development</p>
+                    <p class="card-text text-indent">This 2D RPG game focuses on math subjects like fractions and includes three stages with randomly generated maps. Although the code is simple and somewhat disorganized, I successfully met all the requirements set by my panelists.</p>
+                    <a href="http://kimcatalan12.itch.io/ak" class="sub_text mb-2" target="_blank" rel="noopener noreferrer">http://kimcatalan12.itch.io/ak</a>
+                    <div class="mt-2 row row-cols-auto">
+                      <div class="col">
+                        <div class="badge bgcs card-title">GODOT</div>
+                      </div>
+                      <div class="col">
+                        <div class="badge bgcs card-title">GDSCRIPT</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
+      
     </section>
     <section class="justify-content-end row scrollspyHeading5" id="scrollspyHeading5" style="margin-bottom: 25dvh;">
       <div class="align-self-end col-12 col-md-6">
@@ -184,6 +221,40 @@
       </div>
     </footer>
 
+    <!-- modal project -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="bgcs modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="imageModalLabel">Web Portfolio</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                  <img src="img/web_portfolio_design.png" alt="Large Image" class="img-fluid">
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btp_o_1" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="test" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="bgcs modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="imageModalLabel">THESIS: ADVENTURE OF KIM</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                  <img src="img/game_development.png" alt="Large Image" class="img-fluid">
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btp_o_1" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
