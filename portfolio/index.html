@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ==========================================================
+       EDIT ME: page title + meta description
+       ========================================================== -->
+  <title>KIM CATALAN — Junior Programmer</title>
+  <meta name="description" content="KIM CATALAN, a Junior Programmer." />
+  <link rel="icon" type="image/svg+xml" href="assets/image/favicon.svg" id="favicon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Parallax dot-grid background (moves slowly on scroll) -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-dots" id="bgDots"></div>
+  </div>
+
+  <a href="#about" class="skip-link">Skip to content</a>
+
+  <!-- ============================ NAV ============================ -->
+  <header class="nav-wrap" id="navWrap">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="#about">
+        <span class="brand-mark">&lt;<span class="brand-text">Kim</span>/&gt;</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About me</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch theme" title="Switch theme">
+            <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2v2.6M12 19.4V22M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2 12h2.6M19.4 12H22M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9" />
+            </svg>
+            <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 14.5A8.2 8.2 0 0 1 9.5 4 8.3 8.3 0 1 0 20 14.5Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section id="about" class="section section--hero">
+      <div class="container">
+        <div class="row align-items-center gx-4 gy-5">
+
+          <div class="col-lg-7 reveal">
+            <p class="eyebrow"><span class="pulse"></span> Available for opportunities</p>
+            <h1 class="hero-name">Kim Catalan</h1>
+            <h2 class="hero-title">
+              Junior <span class="grad">Programmer</span>
+            </h2>
+            <p class="hero-intro">
+              I am an Information Technology graduate with professional experience in web application development, UI/UX
+              improvement, database management, and system maintenance. My experience includes developing and
+              maintaining web applications, while also working on system enhancements, data optimization, and
+              application performance.
+            </p>
+            <div class="hero-cta">
+              <a href="#experience" class="btn-accent">View experience</a>
+              <a href="#contact" class="btn-ghost">Contact me</a>
+            </div>
+            <ul class="socials" aria-label="Social links">
+              <li><a href="https://github.com/kimcatalan12" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                    <path
+                      d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+                  </svg>
+                </a></li>
+              <li><a href="https://linkedin.com/in/kim-catalan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                    <path
+                      d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.71h.05A4.17 4.17 0 0 1 17.6 8.7c3.7 0 4.4 2.34 4.4 5.38V21h-4v-5.85c0-1.4-.03-3.2-2-3.2s-2.3 1.52-2.3 3.1V21h-4V9Z" />
+                  </svg>
+                </a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-5 reveal" data-delay="120">
+            <!-- Decorative code card -->
+            <div class="code-card">
+              <div class="code-card__bar">
+                <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+                <span class="code-card__name">about.js</span>
+              </div>
+              <pre class="code-card__body"><code><span class="c-key">const</span> <span class="c-var">me</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">'Kim Catalan'</span>,
+  <span class="c-prop">role</span>: <span class="c-str">'Jr. Programmer'</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">'HTML'</span>, <span class="c-str">'CSS'</span>, <span class="c-str">'JavaScript'</span>, <span class="c-str">'PHP'</span>, 
+    <span class="c-str">'Git'</span>, <span class="c-str">'SQL'</span>],
+  <span class="c-prop">workExperience</span>: <span class="c-str">'4 years'</span>,
+  <span class="c-prop">projects</span>: <span class="c-key">2</span>,
+  <span class="c-prop">certificate</span>: <span class="c-key">3</span>,
+  <span class="c-prop">openToWork</span>: <span class="c-key">true</span>,
+  <span class="c-prop">project</span>() {
+    <span class="c-var">webportfolio</span>();
+  }
+};
+
+<span class="c-var">me</span>.<span class="c-prop">project</span>();</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- GitHub contributions (part of About) ---------- -->
+        <div class="gh-card reveal" data-delay="200">
+          <div class="gh-card__head">
+            <div>
+              <h3 class="gh-card__title">GitHub contributions</h3>
+            </div>
+            <!-- EDIT ME: your GitHub profile URL -->
+            <a class="btn-ghost btn-ghost--sm" href="https://github.com/kimcatalan12" target="_blank"
+              rel="noopener">@kimcatalan12</a>
+          </div>
+
+          <!-- Live stats pulled from the GitHub REST API; see main.js "GITHUB STATS". -->
+          <div class="gh-stats" id="ghStats">
+            <div class="gh-stat">
+              <span class="gh-stat__num" data-stat="repos">–</span>
+              <span class="gh-stat__label">Public repos</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-stat__num" data-stat="stars">–</span>
+              <span class="gh-stat__label">Stars earned</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-stat__num" data-stat="followers">–</span>
+              <span class="gh-stat__label">Followers</span>
+            </div>
+            <div class="gh-stat">
+              <span class="gh-stat__num" data-stat="years">–</span>
+              <span class="gh-stat__label">Years on GitHub</span>
+            </div>
+          </div>
+
+          <div class="gh-graph" id="ghGraph">
+            <!-- EDIT ME: replace `your-github-username` below with your handle.
+                 If the image fails to load, main.js draws a placeholder grid instead. -->
+            <img id="ghChart" class="gh-chart" src="https://ghchart.rshah.org/00adb5/kimcatalan12"
+              alt="GitHub contribution chart for kimcatalan12" />
+          </div>
+
+          <div class="gh-legend">
+            <span class="muted">Less</span>
+            <i class="lvl lvl-0"></i><i class="lvl lvl-1"></i><i class="lvl lvl-2"></i><i class="lvl lvl-3"></i><i
+              class="lvl lvl-4"></i>
+            <span class="muted">More</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ EXPERIENCE ============================ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">{ 01 }</span>
+          <h2 class="section-title">Experience</h2>
+          <span class="section-sub">Where I've worked.</span>
+        </div>
+
+        <div class="timeline">
+
+          <!-- ===== EXPERIENCE ITEM (copy this whole <article> to add more) ===== -->
+          <article class="xp reveal">
+            <div class="xp__marker" aria-hidden="true"></div>
+            <div class="xp__card">
+              <header class="xp__head">
+                <div>
+                  <h3 class="xp__role">Junior Programmer</h3>
+                  <span class="xp__company">Digiflash Concept, Corp. <span class="sep">·</span> <span
+                      class="muted">Hybrid</span></span>
+                </div>
+                <span class="xp__date">Oct 2022 <span class="sep">—</span> May 2026</span>
+              </header>
+
+              <p class="xp__desc">
+                As a Junior Programmer, I have been responsible for designing and improving the UI/UX of a web portal,
+                ensuring a seamless user experience. I perform regular maintenance to enhance system performance and
+                resolve technical issues. Additionally, I develop and optimize data display to improve readability and
+                accessibility. I implement data optimization techniques to enhance efficiency and responsiveness. I also
+                contribute to the development of new features to improve portal functionality based on user
+                requirements. Furthermore, I have been part of the HRIS development, assisting in enhancing and
+                maintaining the system. In payroll, I focus on system monitoring, ensuring smooth operation and data
+                accuracy. Lastly, I manage and manipulate the database, ensuring data integrity and reliability across
+                the system.
+              </p>
+
+              <ul class="chips" aria-label="Tools used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Figma</li>
+                <li>Boostrap</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>GitHub</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Microsoft SQL Server</li>
+                <li>XML</li>
+                <li>Filezilla</li>
+                <li>Cpanel</li>
+                <li>Web Development</li>
+                <li>Human Resource Information System (HRIS)</li>
+              </ul>
+
+              <div class="xp__proj">
+                <div class="xp__proj-thumb">
+                  <img src="assets/image/digiflash_login.png" alt="company image">
+                  <img src="assets/image/digiflash_dashboard.png" alt="company image">
+                </div>
+                <div class="xp__proj-body">
+                  <span class="xp__proj-kicker">Company Website</span>
+                  <h4 class="xp__proj-title">Clockwise Portal</h4>
+                  <p class="xp__proj-text">HRIS and payroll portal with an improved UI/UX, optimized data
+                    display, and reliable database management.</p>
+                  <a class="link-arrow" href="https://hrpportal.clockwise.com.ph" target="_blank" rel="noopener">Visit
+                    site <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== EXPERIENCE ITEM 2 ===== -->
+          <article class="xp reveal">
+            <div class="xp__marker" aria-hidden="true"></div>
+            <div class="xp__card">
+              <header class="xp__head">
+                <div>
+                  <h3 class="xp__role">Junior Programmer</h3>
+                  <span class="xp__company">Caravan Industries Inc. <span class="sep">·</span> <span
+                      class="muted">On-site</span></span>
+                </div>
+                <span class="xp__date">May 2022 <span class="sep">—</span> Oct 2022</span>
+              </header>
+
+              <p class="xp__desc">
+                Worked on the development of a new brand and manufacturing website for Caravan Industries Inc. The
+                project focused on establishing the company's online presence through a modern corporate website that
+                presented its leather products, services, career opportunities, and company information. Developed and
+                integrated a Content Management System (CMS) that allowed the company to manage and update website
+                content without requiring direct code changes. I also designed and structured the MySQL database to
+                support dynamic content management. In addition, I optimized the website's responsiveness, performance,
+                and overall user experience, while preparing the system architecture for potential ERP integration and
+                future business-process automation.
+              </p>
+
+              <ul class="chips" aria-label="Tools used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Figma</li>
+                <li>Boostrap</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>GitHub</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Web Development</li>
+                <li>Enterprise Resource Planning (ERP)</li>
+              </ul>
+              <div class="xp__proj">
+                <div class="xp__proj-thumb">
+                  <img src="assets/image/mcjim.png" alt="Company image">
+                </div>
+                <div class="xp__proj-body">
+                  <span class="xp__proj-kicker">Company Website</span>
+                  <h4 class="xp__proj-title">McJIM</h4>
+                  <p class="xp__proj-text">Corporate website with a custom CMS, built to showcase products and
+                    support future ERP integration.</p>
+                  <a class="link-arrow" href="https://mcjimleather.com/" target="_blank" rel="noopener">Visit site <span
+                      aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PROJECTS ============================ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">{ 02 }</span>
+          <h2 class="section-title">Projects</h2>
+          <span class="section-sub">A few things I've built, and why they exist.</span>
+        </div>
+
+        <!-- ---------- Project 1: this portfolio ---------- -->
+        <article class="proj reveal">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="proj__media">
+                <div class="browser">
+                  <div class="browser__bar">
+                    <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+                    <span class="browser__url">kimcatalan12.github.io</span>
+                  </div>
+                  <div class="browser__view">
+                    <div class="mini-hero">
+                      <div class="mini-line mini-line--xl"></div>
+                      <div class="mini-line mini-line--lg"></div>
+                      <div class="mini-line"></div>
+                      <div class="mini-line mini-line--sm"></div>
+                      <div class="mini-row">
+                        <span class="mini-btn"></span><span class="mini-btn mini-btn--ghost"></span>
+                      </div>
+                    </div>
+                    <div class="mini-grid">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="proj__body">
+                <span class="proj__kicker">Project 01</span>
+                <h3 class="proj__title">This Portfolio</h3>
+                <p class="proj__text">
+                  I wanted a portfolio that actually showed how I build, not just what I've
+                  built so I skipped templates and wrote it from scratch: hand-written HTML,
+                  a CSS custom-property theme system, and vanilla JavaScript for the theme
+                  toggle, scroll parallax and reveal animations. Bootstrap only handles the
+                  responsive grid, so every design decision here is mine.
+                </p>
+                <ul class="proj__points">
+                  <li>Dark / light theme that remembers your choice</li>
+                  <li>Parallax dot-grid background at low opacity</li>
+                  <li>Fully responsive, keyboard-navigable, zero build step</li>
+                </ul>
+                <ul class="chips">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>GitHub Pages</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---------- Project 2: thesis game (MOCK) ---------- -->
+        <article class="proj proj--feature reveal">
+          <span class="ribbon">Thesis</span>
+          <div class="row g-0">
+            <div class="col-lg-6 order-lg-2">
+              <div class="proj__media proj__media--game">
+
+                <!-- MOCK GAME CONSOLE — this is a visual mock, not a playable game -->
+                <div class="console" id="gameConsole">
+                  <div class="console__screen">
+                    <div class="scanlines" aria-hidden="true"></div>
+
+                    <div class="console__hud">
+                      <span>SCORE <b id="mockScore">00420</b></span>
+                      <span class="hud-lives" aria-label="lives">
+                        <i class="heart"></i><i class="heart"></i><i class="heart"></i>
+                      </span>
+                      <span>LV <b>03</b></span>
+                    </div>
+
+                    <div class="stage" id="mockStage">
+                      <div class="stage__sky"></div>
+                      <div class="stage__hills"></div>
+                      <div class="stage__ground"></div>
+                      <div class="sprite sprite--player" aria-hidden="true"></div>
+                      <div class="sprite sprite--enemy" aria-hidden="true"></div>
+                      <div class="sprite sprite--coin" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="console__overlay" id="mockOverlay">
+                      <span class="console__logo">ECHO<span>RUN</span></span>
+                      <span class="console__tag">A thesis prototype</span>
+                      <button class="console__start" id="mockStart" type="button">▶ Preview demo</button>
+                      <span class="console__note">Visual mock — not the playable build</span>
+                    </div>
+                  </div>
+                  <div class="console__deck">
+                    <span class="dpad" aria-hidden="true"></span>
+                    <span class="console__label">MOCK BUILD v0.3</span>
+                    <span class="abtn" aria-hidden="true"><i>A</i><i>B</i></span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6 order-lg-1">
+              <div class="proj__body">
+                <span class="proj__kicker">Project 02 <span class="sep">·</span> Thesis</span>
+                <h3 class="proj__title">Adventure of Kim</h3>
+                <p class="proj__text">
+                  Adventure of Kim is an 2D educational game designed to teach fraction concepts through interactive
+                  gameplay. The project combines educational content with game mechanics to make learning more engaging.
+                  The game includes multiple levels with increasing difficulty, allowing learners to progressively
+                  practice and reinforce their understanding of fractions. Interactive mechanics and user interactions
+                  were designed to support both the educational objectives and the overall gameplay experience.
+                </p>
+                <ul class="chips">
+                  <li>GODOT</li>
+                  <li>GDScript</li>
+                  <li>Python</li>
+                  <li>Research</li>
+                </ul>
+                <div class="proj__links">
+                  <!-- EDIT ME -->
+                  <a class="btn-accent btn-sm-nav" href="http://kimcatalan12.itch.io/ak" target="_blank"
+                    rel="noopener">Visit site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================ CERTIFICATES ============================ -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-num">{ 03 }</span>
+          <h2 class="section-title">Certificates</h2>
+          <span class="section-sub">Courses I finished, not just started.</>
+        </div>
+
+        <div class="row g-4">
+
+          <div class="col-sm-6 col-lg-4 reveal">
+            <article class="cert">
+              <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/huawei.svg" class="cert__logo"
+                alt="certifcate">
+              <h3 class="cert__title">HCIA-CLOUD COMPUTING V4.0 COURSE</h3>
+              <span class="cert__from">HUAWEI</span>
+              <span class="cert__year">2022</span>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 reveal" data-delay="80">
+            <article class="cert">
+              <img src="https://cdn.simpleicons.org/freecodecamp/0A0A23" class="cert__logo" alt="certifcate">
+              <h3 class="cert__title">Responsive Web Design</h3>
+              <span class="cert__from">freeCodeCamp</span>
+              <span class="cert__year">2025</span>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 reveal" data-delay="160">
+            <article class="cert">
+              <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/coursera.webp" class="cert__logo"
+                alt="certifcate">
+              <h3 class="cert__title">Build a free website with WordPress</h3>
+              <span class="cert__from">Coursera</span>
+              <span class="cert__year">2026</span>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section id="contact" class="section section--contact">
+      <div class="container">
+        <div class="contact reveal">
+          <h2 class="contact__title">Let's build something.</h2>
+          <span class="contact__text">
+            I'm open to junior roles and freelance work. Reach out through GitHub or LinkedIn
+            and I'll reply within a day.
+          </span>
+          <ul class="justify-content-center socials" aria-label="Social links">
+            <li><a href="https://github.com/kimcatalan12" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+                </svg>
+              </a></li>
+            <li><a href="https://linkedin.com/in/kim-catalan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                  <path
+                    d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.71h.05A4.17 4.17 0 0 1 17.6 8.7c3.7 0 4.4 2.34 4.4 5.38V21h-4v-5.85c0-1.4-.03-3.2-2-3.2s-2.3 1.52-2.3 3.1V21h-4V9Z" />
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="year">2026</span> Kim Catalan. version 1.0.</p>
+      <a href="#about" class="link-arrow">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
