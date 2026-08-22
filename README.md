@@ -21,8 +21,13 @@ portfolio/
 ## Future Featured
 
 - [x] Website icon
+- [x] github contribution
 - [ ] Embedded game
 - [ ] Title animation change (type writing animation)
 - [ ] Multi-language support (i18n)
 - [ ] Chatbot widget
 - [ ] Clean responsive
+
+## Link
+
+<https://kimcatalan12.github.io/web_portfolio/>
