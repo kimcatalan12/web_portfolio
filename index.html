@@ -12,6 +12,19 @@
   <meta name="description" content="KIM CATALAN, a Junior Programmer." />
   <link rel="icon" type="image/svg+xml" href="assets/image/favicon.svg" id="favicon" />
 
+  <!-- Content Security Policy: only allow the hosts this page actually uses -->
+  <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' https://cdn.jsdelivr.net;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net;
+      font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' data: https://ghchart.rshah.org https://cdn.jsdelivr.net https://cdn.simpleicons.org;
+      connect-src 'self' https://api.github.com;
+      frame-src https://itch.io https://*.itch.zone;
+      object-src 'none';
+      base-uri 'self';
+    " />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -370,27 +383,19 @@
           </div>
         </article>
 
-        <!-- ---------- Project 2: thesis game (MOCK) ---------- -->
+        <!-- ---------- Project 2: thesis game (itch.io embed) ---------- -->
         <article class="proj proj--feature reveal">
           <span class="ribbon">Thesis</span>
           <div class="row g-0">
             <div class="col-lg-6 order-lg-2">
               <div class="proj__media proj__media--game">
 
-                <!-- MOCK GAME CONSOLE — this is a visual mock, not a playable game -->
-                <div class="console" id="gameConsole">
-                  <div class="console__screen">
+                <!-- GAME CONSOLE — click-to-play; the itch.io iframe is injected by js/main.js -->
+                <div class="console" id="gameConsole" data-embed="https://itch.io/embed-upload/4928391?color=060a12">
+                  <div class="console__screen" id="gameScreen">
                     <div class="scanlines" aria-hidden="true"></div>
 
-                    <div class="console__hud">
-                      <span>SCORE <b id="mockScore">00420</b></span>
-                      <span class="hud-lives" aria-label="lives">
-                        <i class="heart"></i><i class="heart"></i><i class="heart"></i>
-                      </span>
-                      <span>LV <b>03</b></span>
-                    </div>
-
-                    <div class="stage" id="mockStage">
+                    <div class="stage" id="gameStage">
                       <div class="stage__sky"></div>
                       <div class="stage__hills"></div>
                       <div class="stage__ground"></div>
@@ -399,16 +404,16 @@
                       <div class="sprite sprite--coin" aria-hidden="true"></div>
                     </div>
 
-                    <div class="console__overlay" id="mockOverlay">
-                      <span class="console__logo">ECHO<span>RUN</span></span>
-                      <span class="console__tag">A thesis prototype</span>
-                      <button class="console__start" id="mockStart" type="button">▶ Preview demo</button>
-                      <span class="console__note">Visual mock — not the playable build</span>
+                    <div class="console__overlay" id="gameOverlay">
+                      <span class="console__logo">ADVENTURE<span> OF KIM</span></span>
+                      <span class="console__tag">Educational Game · Thesis</span>
+                      <button class="console__start" id="gameStart" type="button">▶ Play in browser</button>
+                      <span class="console__note">Loads from itch.io</span>
                     </div>
                   </div>
                   <div class="console__deck">
                     <span class="dpad" aria-hidden="true"></span>
-                    <span class="console__label">MOCK BUILD v0.3</span>
+                    <span class="console__label">THESIS V1</span>
                     <span class="abtn" aria-hidden="true"><i>A</i><i>B</i></span>
                   </div>
                 </div>
@@ -418,7 +423,7 @@
 
             <div class="col-lg-6 order-lg-1">
               <div class="proj__body">
-                <span class="proj__kicker">Project 02 <span class="sep">·</span> Thesis</span>
+                <span class="proj__kicker">Project 02</span>
                 <h3 class="proj__title">Adventure of Kim</h3>
                 <p class="proj__text">
                   Adventure of Kim is an 2D educational game designed to teach fraction concepts through interactive
@@ -434,7 +439,6 @@
                   <li>Research</li>
                 </ul>
                 <div class="proj__links">
-                  <!-- EDIT ME -->
                   <a class="btn-accent btn-sm-nav" href="http://kimcatalan12.itch.io/ak" target="_blank"
                     rel="noopener">Visit site</a>
                 </div>
@@ -521,7 +525,7 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="muted">© <span id="year">2026</span> Kim Catalan. version 1.0.</p>
+      <p class="muted">© <span id="year">2026</span> Kim Catalan. version 1.2</p>
       <a href="#about" class="link-arrow">Back to top <span aria-hidden="true">↑</span></a>
     </div>
   </footer>

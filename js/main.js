@@ -184,30 +184,23 @@
       .catch(function () { setStat('stars', '–'); });
   }
 
-  /* ==================== 06. MOCK GAME CONSOLE ==================== */
-  // Purely decorative: no game logic, just a looping animation + fake score.
+  /* ==================== 06. GAME CONSOLE (itch.io embed) ==================== */
+  // The iframe is only created on click, so the game's download doesn't slow the page load.
   var consoleEl = document.getElementById('gameConsole');
-  var startBtn = document.getElementById('mockStart');
-  var scoreEl = document.getElementById('mockScore');
-  var scoreTimer = null;
+  var screenEl = document.getElementById('gameScreen');
+  var startBtn = document.getElementById('gameStart');
 
-  if (consoleEl && startBtn) {
+  if (consoleEl && screenEl && startBtn) {
     startBtn.addEventListener('click', function () {
-      var playing = consoleEl.classList.toggle('is-playing');
-      if (playing && scoreEl && !reduceMotion) {
-        var score = 420;
-        scoreTimer = setInterval(function () {
-          score += Math.floor(Math.random() * 25) + 5;
-          scoreEl.textContent = String(score).padStart(5, '0');
-        }, 380);
-        // stop the demo loop after a while so it isn't animating forever
-        setTimeout(function () {
-          consoleEl.classList.remove('is-playing');
-          clearInterval(scoreTimer);
-        }, 14000);
-      } else {
-        clearInterval(scoreTimer);
-      }
+      if (consoleEl.classList.contains('is-loaded')) return;
+      var frame = document.createElement('iframe');
+      frame.className = 'console__frame';
+      frame.src = consoleEl.getAttribute('data-embed');
+      frame.title = 'Adventure of Kim — playable game';
+      frame.allow = 'autoplay; fullscreen *; gamepad; cross-origin-isolated';
+      screenEl.appendChild(frame);
+      consoleEl.classList.add('is-loaded');
+      frame.focus();
     });
   }
 

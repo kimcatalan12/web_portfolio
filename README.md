@@ -22,11 +22,9 @@ portfolio/
 
 - [x] Website icon
 - [x] github contribution
-- [ ] Embedded game
-- [ ] Title animation change (type writing animation)
+- [x] Embedded game
 - [ ] Multi-language support (i18n)
-- [ ] Chatbot widget
-- [ ] Clean responsive
+- [ ] Review responsive
 
 ## Link
 
